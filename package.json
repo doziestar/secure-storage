@@ -1,0 +1,26 @@
+{
+  "name": "secure-storage",
+  "version": "1.0.0",
+  "repository": "https://github.com/doziestar/secure-storage.git",
+  "author": "Chidozie C. Okafor <39489124+doziestar@users.noreply.github.com>",
+  "license": "MIT",
+  "description": "A package for encrypting and decrypting credentials in various databases.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "pg": "^8.6.0",
+    "mysql2": "^2.2.5"
+  }
+}
